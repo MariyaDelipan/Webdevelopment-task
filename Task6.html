@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            HTML FORM Registration
+        </title>
+    </head>
+    <body>
+        <form>
+            <table style="border: 2PX; align-items: center; width: 500px;background-color: blueviolet;">
+            <caption><b> Registration Form</b></caption>
+            <tr>
+                <th> First Name</th>
+                <td><input type="text" name="fn" placeholder="Mariya" required/></td>
+            </tr>
+            <tr>
+                <th> Last Name</th>
+                <td><input type="text" name="ln" placeholder="delipan"required/></td>
+            </tr>
+            <tr>
+                <th>  Date Of Birth </th>
+                <td><input type="date"  placeholder="13-07-2024"required/></td>
+            </tr>
+            <tr>
+                <th> You City</th>
+                <td><input type="city"  placeholder="Tamil Nadu"required/></td>
+            </tr>
+            <tr>
+                <th> Enter You Address</th>
+                <td><textarea rows="3" cols="20"  placeholder="Enter You Adderss details"></textarea></td>
+            </tr>
+            <tr>
+                <th>Select Gender</th>
+                    <td>male<input type="radio" name="Gender"/></td>
+                    <td>female<input type="radio" name="Gender"/></td>
+            </tr>
+            <tr>
+                <th> Mobile Number</th>
+                <td><input type="tel"  placeholder="9361148656"required/></td>
+            </tr>
+            <tr>
+                <th>Email Id</th>
+                <td><input type="email"  placeholder="abcd143@gmail.com"required/></td>
+            </tr>
+            <tr>
+                <th> UserName</th>
+                <td><input type="text" name="un" placeholder="@Mariya123" required/></td>
+            </tr>
+            <tr>
+                <th> Enter Password</th>
+                <td><input type="password"  placeholder="Amd123!"required/></td>
+            </tr>
+            <tr>
+                <th> confrim Password</th>
+                <td><input type="password"  placeholder="Amd123!"required/></td>
+            </tr>
+            <tr>
+                <th>Position for Applied</th>
+                <td>
+                    <select name="Position">
+                    <option value="" selected="selected" disabled="disabled">Select Position</option>
+                    <option value="1"> HR </option>
+                    <option value="2"> Assistant HR </option>
+                    <option value="3"> Accountant </option>
+                    <option value="4">Data Analyser </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            <th>Additional Skills and Certificate</th>
+            <td><textarea rows="5" cols="20" placeholder="Enter Your Skills"></textarea> </td>
+            </tr>
+            <tr>
+                <th>upload You Resume Here</th>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding: 20px; text-align: center;">
+                    <input type="submit" value="save Details"/>
+                    <input type="reset" value="reset Details"/>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
