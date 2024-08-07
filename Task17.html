@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #89f143;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #e3f749;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar h2 {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .profile-form {
+            background-color: #f671b5;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        .profile-form label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+        .profile-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .profile-form button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Account</h2>
+    <img src="image/Pofile image.jfif">
+    <ul>
+        <li><a href="#">Profile Base</a></li>
+        <li><a href="#">Notification Settings</a></li>
+        <li><a href="#">Password</a></li>
+        <li><a href="#">Log Out</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="profile-form">
+        <h2>Edit your profile</h2>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname">
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="bio">Bio</label>
+        <input type="text" id="bio" name="bio" placeholder="Type something about you">
+
+        <button type="submit">Save Changes</button>
+    </div>
+</div>
+
+</body>
+</html>
